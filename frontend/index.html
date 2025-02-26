@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Sheets Clone</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js Library -->
+</head>
+<body>
+  <div class="app-container">
+    <div class="toolbar">
+      <button class="toolbar-button" id="bold-button">Bold</button>
+      <button class="toolbar-button" id="italic-button">Italic</button>
+      <button class="toolbar-button" id="fontSize-button">Font Size</button>
+      <button class="toolbar-button" id="color-button">Color</button>
+
+      <button class="toolbar-button" id="sum-button">SUM</button>
+      <button class="toolbar-button" id="average-button">AVERAGE</button>
+      <button class="toolbar-button" id="max-button">MAX</button>
+      <button class="toolbar-button" id="min-button">MIN</button>
+      <button class="toolbar-button" id="count-button">COUNT</button>
+
+      <button class="toolbar-button" id="trim-button">Trim</button>
+      <button class="toolbar-button" id="upper-button">Upper</button>
+      <button class="toolbar-button" id="lower-button">Lower</button>
+      <button class="toolbar-button" id="remove-duplicates-button">Remove Duplicates</button>
+      <button class="toolbar-button" id="find-replace-button">Find & Replace</button>
+
+      
+    </div>
+
+    <div class="spreadsheet-container">
+      <div class="spreadsheet-header">
+        <div class="column-header" id="column-A">A</div>
+        <div class="column-header" id="column-B">B</div>
+        <div class="column-header" id="column-C">C</div>
+        <div class="column-header" id="column-A">A</div>
+        <div class="column-header" id="column-B">B</div>
+        <div class="column-header" id="column-C">C</div>
+        <!-- Add more column headers as needed -->
+      </div>
+      <div class="spreadsheet-body">
+        <div class="row" id="row-1">
+          <div class="cell " id="cell-A1" contenteditable="true"></div>
+          <div class="cell " id="cell-B1" contenteditable="true"></div>
+          <div class="cell " id="cell-C1" contenteditable="true"></div>
+          <div class="cell " id="cell-A1" contenteditable="true"></div>
+          <div class="cell " id="cell-B1" contenteditable="true"></div>
+          <div class="cell " id="cell-C1" contenteditable="true"></div>
+        </div>
+        <div class="row" id="row-2">
+          <div class="cell" id="cell-A2" contenteditable="true"></div>
+          <div class="cell" id="cell-B2" contenteditable="true"></div>
+          <div class="cell" id="cell-C2" contenteditable="true"></div>
+          <div class="cell " id="cell-A1" contenteditable="true"></div>
+          <div class="cell " id="cell-B1" contenteditable="true"></div>
+          <div class="cell " id="cell-C1" contenteditable="true"></div>
+        </div>
+        <div class="row" id="row-1">
+          <div class="cell " id="cell-A1" contenteditable="true"></div>
+          <div class="cell " id="cell-B1" contenteditable="true"></div>
+          <div class="cell " id="cell-C1" contenteditable="true"></div>
+          <div class="cell " id="cell-A1" contenteditable="true"></div>
+          <div class="cell " id="cell-B1" contenteditable="true"></div>
+          <div class="cell " id="cell-C1" contenteditable="true"></div>
+        </div>
+        <div class="row" id="row-2">
+          <div class="cell" id="cell-A2" contenteditable="true"></div>
+          <div class="cell" id="cell-B2" contenteditable="true"></div>
+          <div class="cell" id="cell-C2" contenteditable="true"></div>
+          <div class="cell " id="cell-A1" contenteditable="true"></div>
+          <div class="cell " id="cell-B1" contenteditable="true"></div>
+          <div class="cell " id="cell-C1" contenteditable="true"></div>
+        </div>
+        <!-- Add more rows as needed -->
+      </div>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
